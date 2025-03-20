@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Форма входа{% endblock %}
+
+{% block content %}
+<h1>Аварийный доступ</h1>
+<form method="POST">
+    <label for="astronaut_id">ID астронавта:</label>
+    <input type="text" id="astronaut_id" name="astronaut_id" required><br>
+
+    <label for="astronaut_password">Пароль астронавта:</label>
+    <input type="password" id="astronaut_password" name="astronaut_password" required><br>
+
+    <label for="captain_id">ID капитана или заместителя:</label>
+    <input type="text" id="captain_id" name="captain_id" required><br>
+
+    <label for="captain_token">Токен капитана или заместителя:</label>
+    <input type="text" id="captain_token" name="captain_token" required><br>
+
+    <button type="submit">Доступ</button>
+</form>
+{% endblock %}
